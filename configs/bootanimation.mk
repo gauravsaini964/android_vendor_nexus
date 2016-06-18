@@ -33,7 +33,7 @@ ifneq ($(filter nexus_flounder,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
         vendor/nexus/prebuilt/bootanimation/flounder.zip:system/media/bootanimation.zip
 endif
-ifneq ($(filter nexus_hammerhead,$(TARGET_PRODUCT)),)
+ifneq ($(filter nexus_hammerhead nexus_bacon,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
         vendor/nexus/prebuilt/bootanimation/hammerhead.zip:system/media/bootanimation.zip
 endif
